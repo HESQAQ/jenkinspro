@@ -21,9 +21,9 @@ pipeline {
                 }
             }
         }
-        stage('Deliver') { 
+         stage('Deliver') { 
             steps {
-                sh 'echo 'hello world'' 
+                sh './jenkins/scripts/deliver.sh' 
             }
         }
     }
