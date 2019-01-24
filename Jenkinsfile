@@ -26,7 +26,7 @@ pipeline {
                 sh 'mvn jar:jar install:install help:evaluate -Dexpression=project.name' 
                 sh 'mvn help:evaluate -Dexpression=project.name'
                 sh 'mvn help:evaluate -Dexpression=project.version'
-                sh 'java -jar target/${project.name}-${project.version}.jar'
+                
             }
         }
     }
