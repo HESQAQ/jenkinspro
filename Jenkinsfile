@@ -21,6 +21,10 @@ pipeline {
                 }
             }
         }
-       
+        stage('Deliver') { 
+            steps {
+                sh 'echo 'hello world'' 
+            }
+        }
     }
 }
