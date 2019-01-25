@@ -26,7 +26,7 @@ pipeline {
                 sh 'mvn jar:jar install:install help:evaluate -Dexpression=project.name' 
                 sh 'mvn help:evaluate -Dexpression=project.name'
                 sh 'mvn help:evaluate -Dexpression=project.version'
-                sh 'java -jar target/*.jar'
+                sh 'java -jar target/springcloud_1_eurekaserver-0.0.1-SNAPSHOT.jar'
             }
         }
     }
